@@ -8,10 +8,10 @@ public class Pockets : MonoBehaviour
     string[] inventory;
 
     [SerializeField]
-    bool key1 = true;
-    public bool Key1
+    bool[] keys;
+    public bool[] Keys
     {
-        get { return key1; }
+        get { return keys; }
     }
 
     public string[] Inventory

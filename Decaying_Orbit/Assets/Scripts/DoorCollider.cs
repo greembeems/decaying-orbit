@@ -19,7 +19,7 @@ public class DoorCollider : MonoBehaviour
     {
         doorCollider = gameObject.GetComponent<Collider2D>();
         doorCollider.enabled = true;
-        key[0] = pockets.Key1;
+        key[0] = pockets.Keys[0];
     }
 
 
