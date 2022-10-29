@@ -6,6 +6,14 @@ public class Pockets : MonoBehaviour
 {
     [SerializeField]
     string[] inventory;
+
+    [SerializeField]
+    bool key1 = true;
+    public bool Key1
+    {
+        get { return key1; }
+    }
+
     public string[] Inventory
     {
         get { return inventory; }
