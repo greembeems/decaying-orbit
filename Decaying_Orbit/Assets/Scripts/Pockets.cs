@@ -4,15 +4,14 @@ using UnityEngine;
 
 public class Pockets : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    string[] inventory;
+    public string[] Inventory
     {
-        
+        get { return inventory; }
     }
 
-    // Update is called once per frame
-    void Update()
+    public void AddItem(int index, string name)
     {
-        
+        inventory[index] = name;
     }
 }
