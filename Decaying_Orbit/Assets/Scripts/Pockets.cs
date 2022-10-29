@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Pockets : MonoBehaviour
 {
+    [SerializeField]
     string[] inventory;
     public string[] Inventory
     {
