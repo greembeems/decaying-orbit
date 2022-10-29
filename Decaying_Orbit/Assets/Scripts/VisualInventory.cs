@@ -17,9 +17,9 @@ public class VisualInventory : MonoBehaviour
     GameObject[] loreSprites;
 
     // Will visually display as 
-    // 1    2
-    // 3    4
-    // 5    6
+    // 1    4
+    // 2    5
+    // 3    6
 
     // Start is called before the first frame update
     void Start()
@@ -33,6 +33,8 @@ public class VisualInventory : MonoBehaviour
             {
                 inventoryItems[i].enabled = true;
             }
+
+            loreSprites[i].SetActive(false);
         }
     }
 
@@ -43,6 +45,12 @@ public class VisualInventory : MonoBehaviour
 
     public void DisplayItem(int index)
     {
+        // Remove any active lore sprites
+        for (int i = 0; i < loreSprites.Length; i++)
+        {
+            loreSprites[i].SetActive(false);
+        }
+        // Display the desired lore card
         loreSprites[index].SetActive(true);
     }
 }
