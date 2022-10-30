@@ -9,6 +9,14 @@ public class Pockets : MonoBehaviour
 
     [SerializeField]
     bool[] keys;
+
+    [SerializeField]
+    AudioClip clip;
+    [SerializeField]
+    float volume = 1;
+    [SerializeField]
+    AudioSource source;
+
     public bool[] Keys
     {
         get { return keys; }
@@ -22,5 +30,12 @@ public class Pockets : MonoBehaviour
     public void AddItem(int index, string name)
     {
         inventory[index] = name;
+        source.PlayOneShot(clip, volume);
+    }
+
+    public void AddKey(int index)
+    {
+        keys[index] = true;
+        source.PlayOneShot(clip, volume);
     }
 }

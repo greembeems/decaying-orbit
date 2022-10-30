@@ -15,6 +15,10 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField]
     public float jumpSpeed = 10.0f;
 
+    bool invenOpen = false;
+    [SerializeField]
+    VisualInventory visInven;
+
 
     private void Start()
     {
@@ -31,6 +35,16 @@ public class PlayerMovement : MonoBehaviour
         if(Input.GetButtonDown("Jump"))
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpSpeed);
+        }
+        if(Input.GetButtonDown("Inventory") && invenOpen)
+        {
+            invenOpen = false;
+            visInven.CloseInventory();
+        }
+        else if(Input.GetButtonDown("Inventory") && !invenOpen)
+        {
+            invenOpen = true;
+            visInven.DisplayInventory();
         }
     }
 }

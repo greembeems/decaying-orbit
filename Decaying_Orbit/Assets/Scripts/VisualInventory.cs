@@ -53,4 +53,9 @@ public class VisualInventory : MonoBehaviour
         // Display the desired lore card
         loreSprites[index].SetActive(true);
     }
+
+    public void CloseInventory()
+    {
+        inventoryCanvas.enabled = false;
+    }
 }
