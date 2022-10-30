@@ -77,9 +77,13 @@ MonoBehaviour:
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
+    m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: New Text
+  m_Text: "Day 754: Something\u2019s wrong with the numbers. We should have years
+    until this star reaches anywhere near this level of decay. It's simply not possible.
+    There's no way it could have gone from years to minutes. This has to be some
+    kind of sick joke. Ha ha! Very funny guys. Now give me my real numbers. \u2026
+    Guys?"
 --- !u!1 &7999662335787293773
 GameObject:
   m_ObjectHideFlags: 0

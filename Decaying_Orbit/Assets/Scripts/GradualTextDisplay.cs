@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class GradualTextDisplay : MonoBehaviour
 {
@@ -10,7 +11,7 @@ public class GradualTextDisplay : MonoBehaviour
     List<string> dialogueLines;
 
     [SerializeField]
-    Text dialogueText;
+    TextMeshPro dialogueText;
     // Current displayed string
     string dialogueByLetter = "";
     // Line of dialogue
@@ -25,37 +26,33 @@ public class GradualTextDisplay : MonoBehaviour
     float currentTimeDialogue;
     float currentTimeBubble;
 
+    [SerializeField]
+    AudioClip clip;
+    [SerializeField]
+    float volume = 1;
+    [SerializeField]
+    AudioSource source;
+
     // Dialogue bubble components
     // Prefab
     [SerializeField]
-    GameObject bubble;
-    // Object's bubble
     GameObject textBubble;
 
     // If the text is triggered and if the player is in range
     bool textTriggered = false;
 
-    // Location
-    Vector3 location;
-
     private void Awake()
     {
-        // Set up text bubble so it displays a consistent height from the character speaking
-        textBubble = Instantiate<GameObject>(bubble);
-        textBubble.transform.position = location;
         // Hide the text bubble
         textBubble.SetActive(false);
         // Grab the text component
-        dialogueText = textBubble.transform.Find("Dialogue").GetComponent<Text>();
+        //dialogueText = textBubble.transform.Find("Dialogue").GetComponent<Text>();
     }
 
     // Start is called before the first frame update
     void Start()
     {
         currentTimeDialogue = textSpeed;
-
-        // Setup its position
-        location = gameObject.transform.position + new Vector3(0, 5, 0);
     }
 
     // Update is called once per frame
@@ -93,8 +90,10 @@ public class GradualTextDisplay : MonoBehaviour
             DisplayBubble();
             // Choose random dialogue line
             currentLine = dialogueLines[Random.Range(0, dialogueLines.Count)];
+            Debug.Log(currentLine);
             // Create timer that varies for text length
             currentTimeBubble = (currentLine.Length + 4) * textSpeed;
+            source.PlayOneShot(clip, volume);
         }
     }
 
@@ -113,6 +112,7 @@ public class GradualTextDisplay : MonoBehaviour
     {
         textBubble.SetActive(false);
         dialogueByLetter = "";
+        currentChar = 0;
     }
 
     /// <summary>
