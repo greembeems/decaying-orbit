@@ -31,7 +31,5 @@ public class DoorCollider : MonoBehaviour
         { 
             doorCollider.enabled = false; 
         }
-
     }
-
 }
