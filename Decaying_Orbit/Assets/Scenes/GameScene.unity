@@ -134,6 +134,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LoreSprite2
       objectReference: {fileID: 0}
+    - target: {fileID: 1984967518094840134, guid: bc7c07b4c01252346a06d95368aeb789, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1984967518094840137, guid: bc7c07b4c01252346a06d95368aeb789, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -392,14 +396,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.6037736, g: 0.6037736, b: 0.6037736, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: c400fbb89d1f03240aa16e684ab6d9c9, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -645,6 +649,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LoreSprite5
       objectReference: {fileID: 0}
+    - target: {fileID: 295052726694505494, guid: 4d75de3b308cb2244b57960560dc3a44, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4d75de3b308cb2244b57960560dc3a44, type: 3}
 --- !u!224 &172007352 stripped
@@ -816,6 +824,10 @@ PrefabInstance:
     - target: {fileID: 2326674647667950732, guid: c412daeb30968604797a561b5f8f6cf8, type: 3}
       propertyPath: m_Name
       value: LoreSprite4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2326674647667950732, guid: c412daeb30968604797a561b5f8f6cf8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2326674647667950735, guid: c412daeb30968604797a561b5f8f6cf8, type: 3}
       propertyPath: m_Pivot.x
@@ -1515,6 +1527,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LoreSprite3
       objectReference: {fileID: 0}
+    - target: {fileID: 4131084762849081937, guid: 9bb1f917efd489342a9ff2a9c6f45929, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4131084762849081938, guid: 9bb1f917efd489342a9ff2a9c6f45929, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1705,6 +1721,10 @@ PrefabInstance:
     - target: {fileID: 342491758495534013, guid: 63c1e187ae1766f4f97a27aeb948394b, type: 3}
       propertyPath: m_Name
       value: LoreSprite6
+      objectReference: {fileID: 0}
+    - target: {fileID: 342491758495534013, guid: 63c1e187ae1766f4f97a27aeb948394b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 63c1e187ae1766f4f97a27aeb948394b, type: 3}
@@ -2073,14 +2093,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.09433961, g: 0.09433961, b: 0.09433961, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: c400fbb89d1f03240aa16e684ab6d9c9, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2149,7 +2169,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.3018868, g: 0.3018868, b: 0.3018868, a: 1}
+  m_Color: {r: 0.596796, g: 0.6006949, b: 0.6226415, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

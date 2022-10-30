@@ -28,7 +28,7 @@ public class GameController : MonoBehaviour
         // If game is out of time or the inventory is complete
         if (gameTime <= 0 || CheckInventory())
         {
-            SceneManager.LoadScene("GameOver");
+            SceneManager.LoadScene("MainMenu");
         }
     }
 
