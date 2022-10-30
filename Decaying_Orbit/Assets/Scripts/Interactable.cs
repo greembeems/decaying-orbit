@@ -14,6 +14,8 @@ public class Interactable : MonoBehaviour
     string itemName = "ITEM";
     [SerializeField]
     int itemIndex = 0;
+    [SerializeField]
+    BoxCollider2D trigger;
 
     private void Awake()
     {

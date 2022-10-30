@@ -13,6 +13,9 @@ public class Key : MonoBehaviour
     [SerializeField]
     int keyIndex = 0;
 
+    [SerializeField]
+    BoxCollider2D trigger;
+
     private void Awake()
     {
         playerPocket = player.GetComponent<Pockets>();

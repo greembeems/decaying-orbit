@@ -12,6 +12,8 @@ public class DoorCollider : MonoBehaviour
 
     [SerializeField]
     Pockets pockets;
+    [SerializeField]
+    int index;
 
     // Start is called before the first frame update
 
@@ -19,7 +21,7 @@ public class DoorCollider : MonoBehaviour
     {
         doorCollider = gameObject.GetComponent<Collider2D>();
         doorCollider.enabled = true;
-        key[0] = pockets.Keys[0];
+        //key[index] = pockets.Keys[index];
     }
 
 
@@ -27,7 +29,7 @@ public class DoorCollider : MonoBehaviour
     {
         doorCollider.enabled = true;
         Debug.Log(collision.gameObject.name);
-        if (collision.gameObject.name == "Player" && key[0])
+        if (collision.gameObject.name == "Player" && key[index])
         { 
             doorCollider.enabled = false; 
         }
